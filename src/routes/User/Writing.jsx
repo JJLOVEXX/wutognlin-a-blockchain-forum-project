@@ -79,8 +79,8 @@ class Wirting extends React.Component {
         const articles = JSON.parse(localStorage.getItem('userArticles'))
         setTimeout(() => {
         this.props.form.setFieldsValue({
-            content: BraftEditor.createEditorState(articles[0].post_content_html),
-            title: articles[0].post_title
+            //content: BraftEditor.createEditorState(articles[0].post_content_html),
+            //title: articles[0].post_title
         })
         const articleTitle = []
         articles.forEach((item, index) => {
