@@ -3,17 +3,12 @@
 
 论坛主体部分，包括用户前端页面和后端服务器。
 
-运行方式：
-cd 到根目录
+本地运行方式：
+## 本地数据库建立
+1. 按照代码中的schema目录的实体模型，在本地的mySQL中建立nodesql数据库并设计好表
+2. 更改server目录下的config中default.js的数据库配置
 
-yarn install 下载并安装依赖
-
-yarn start 启动前端
-
-后端服务器启动文件是 /server/app.js
-
-可以 node ./server/app.js
-
-嫌麻烦的话，如果你使用 vscode，可以直接 f5 用 debug 模式启动服务器，我已经配置好脚本
-
-
+## 进入项目根目录
+1. npm i 安装依赖
+2. npm start 启动前端
+3. node .\server\app.js 启动后端
